@@ -20,7 +20,6 @@ script:
   - npm run build
 
 after_script:
-after_script:
   - git clone https://${GH_REF} .temp
   - cd .temp
   - git checkout gh-pages
