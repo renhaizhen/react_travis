@@ -32,7 +32,8 @@ after_script:
   - git config user.email "${U_EMAIL}"
   - git add .
   - git commit -m ":construction_worker:- Build & Deploy by Travis CI"
-  - git push --force --quiet "${GH_TOKEN}@${GH_REF}" gh-pages:${P_BRANCH}
+  #- git push --force --quiet "${GH_TOKEN}@${GH_REF}" gh-pages:${P_BRANCH}
+  - git push --force --quiet https://renhaizhen:${GH_TOKEN}@github.com/renhaizhen/react_travis.git gh-pages:${P_BRANCH}
   # - cd ./build
   # - git init
   # - git config user.name "${U_NAME}"
